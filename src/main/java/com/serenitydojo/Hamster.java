@@ -1,9 +1,9 @@
 package com.serenitydojo;
 
-public class Hampster extends Pet{
+public class Hamster extends Pet{
     private String favoriteGame;
 
-    Hampster(String name, int age, String favoriteGame) {
+    Hamster(String name, int age, String favoriteGame) {
         super(name, age);
         this.favoriteGame = favoriteGame;
     }
@@ -15,4 +15,10 @@ public class Hampster extends Pet{
     public void setFavoriteGame(String favoriteGame) {
         this.favoriteGame = favoriteGame;
     }
+
+    @Override
+    public String play(){
+        return "runs in wheel";
+    }
+
 }
